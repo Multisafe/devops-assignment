@@ -33,15 +33,13 @@ jobs:
         with:
           context: .
           push: true
-          tags: latest
+          tags: srkyaganti/hello:latest
           file: ./services/hello/Dockerfile
-          labels: hello
 
       - name: Build and push World Service
         uses: docker/build-push-action@v2
         with:
           context: .
           push: true
-          tags: latest
+          tags: srkyaganti/world:latest
           file: ./services/world/Dockerfile
-          labels: world
