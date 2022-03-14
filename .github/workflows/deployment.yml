@@ -31,6 +31,7 @@ jobs:
       - name: Build and push Hello Service
         uses: docker/build-push-action@v2
         with:
+          context: .
           push: true
           tags: latest
           file: ./services/hello/Dockerfile
@@ -39,6 +40,7 @@ jobs:
       - name: Build and push World Service
         uses: docker/build-push-action@v2
         with:
+          context: .
           push: true
           tags: latest
           file: ./services/world/Dockerfile
