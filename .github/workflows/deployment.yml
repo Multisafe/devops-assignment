@@ -33,7 +33,7 @@ jobs:
         with:
           push: true
           tags: latest
-          file: ./servics/hello
+          file: ./services/hello/Dockerfile
           labels: hello
 
       - name: Build and push World Service
@@ -41,5 +41,5 @@ jobs:
         with:
           push: true
           tags: latest
-          file: ./servics/world
+          file: ./services/world/Dockerfile
           labels: world
