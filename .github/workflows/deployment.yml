@@ -11,7 +11,6 @@ jobs:
       - name: 'Get branch name'
         id: branch-name
         uses: tj-actions/branch-names@v5
-g
       - name: 'Checkout code'
         uses: actions/checkout@v2
 
