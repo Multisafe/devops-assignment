@@ -11,7 +11,7 @@ jobs:
       - name: 'Get branch name'
         id: branch-name
         uses: tj-actions/branch-names@v5
-
+g
       - name: 'Checkout code'
         uses: actions/checkout@v2
 
@@ -32,4 +32,4 @@ jobs:
         uses: docker/build-push-action@v2
         with:
           push: true
-          tags: srkyaganti/hello:latest
+          tags: srkyaganti/world:latest
